@@ -1,5 +1,4 @@
 
-
 #vertical {
 	/* Placing the item at vertical centre - not strictly necessary for inclusion in other designs */
 	display:block;
@@ -7,11 +6,11 @@
 	margin-top: -307px; /* Half the height of the container DIV */
 	width: 100%;
 }
-.layout-book{
+.layout-book {
 	background: -webkit-radial-gradient(center, ellipse cover, #f8ffe8 93%,#f8ffe8 93%,#b7df2d 100%,#e3f5ab 100%,#e3f5ab 102%);
-	width: 100%;
-	height: 600px;
-	margin: 50 0 0 50px;
+	width: 98%;
+	height: 614px;
+	margin: auto;
 	clear:both;
 	display: block;
 	position: relative;
@@ -20,30 +19,16 @@
 	-webkit-box-shadow: 0px 1px 10px rgba(50, 50, 50, 0.45);
 	-moz-box-shadow: 0px 1px 10px rgba(50, 50, 50, 0.45);
 }
-
-.article {
-	width: 97%;
-	height: 100%;
-	overflow: hidden;
-	/*top: 50px;*/
-	left: 20px;
-	/*right : 20px;*/
-	position: relative;
-	text-align: justify;
-	font-size: 1.4em;
-	line-height: 1.2em;
-	text-shadow:#EEE 1px 1px 1px; /* text shadow is a bonus, but it adds a more book-like feel to the serif typeface */
-}
 .one {
 	height: 100%; /* height of the columns + padding-top */
-	width: 100%; /* width of the visible section of text (= two columns + 1 column gap) */
+	width: 80%; /* width of the visible section of text (= two columns + 1 column gap) */
 	overflow: hidden; /* to prevent overflowing content from appearing */
 	margin: 0;
 }
 
 #columniser {
 	height: 100%; /* - see above */
-	width: 740px; /* - see above */
+	width: 100%; /* - see above */
 	overflow: visible;
 	/* this being the DIV we'll move on non-IE browsers, we want it to show all of its contents */
 	/* so when we slide it, the new columns will be visible */
@@ -51,14 +36,15 @@
 	opacity: 1; /* for the animation */
 }
 .two {
+	/*background: black ;*/
 	column-count: auto;
-	column-width: 330px;
+	column-width: 550px;
 	column-gap: 80px;
 	-webkit-column-count: auto;
-	-webkit-column-width: 50%;
+	-webkit-column-width: 550px;
 	-webkit-column-gap: 80px;
 	-moz-column-count: auto;
-	-moz-column-width: 50%;
+	-moz-column-width: 600px;
 	-moz-column-gap: 80px;
 	height: 100%;
 	overflow: visible; /* necessary here */
@@ -66,16 +52,32 @@
 	padding: 0;
 	padding-top: 4px;
 }
+
+
 #columnified {
 	margin-left: 0;
+}
+
+.article {
+	position: absolute;
+	width: 99%;
+	height: 90%;
+	overflow: hidden;
+	top: 2px;
+	left: 7px;
+	text-align: justify;
+	font-size: 1.4em;
+	line-height: 1.2em;
+	text-shadow:#EEE 1px 1px 1px; /* text shadow is a bonus, but it adds a more book-like feel to the serif typeface */
 }
 
 
 
 .pageseparator {
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	/*margin: 50 0 0 50;*/
+	top:0;
+	bottom:0;
 	left: 50%;
 	width: 0; /* nbsp in HTML necessary for Opera to show the DIV; width:0 necessary to remove effect of nbsp */
 	border-left: 1px solid #ccc;
@@ -88,7 +90,7 @@
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		left: -30px;
+		left: -15px;
 		width: 30px;
 		background: -webkit-gradient(linear, right top, left top, from(rgba(150,150,150,0.2)), to(rgba(150,150,150,0)));
 		background: -moz-linear-gradient(right,  rgba(150,150,150,0.2),  rgba(150,150,150,0));
@@ -100,7 +102,7 @@
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		left: 0px;
+		left: -15px;
 		width: 30px;
 		background: -webkit-gradient(linear, left top, right top, from(rgba(150,150,150,0.2)), to(rgba(150,150,150,0)));
 		background: -moz-linear-gradient(left,  rgba(150,150,150,0.2),  rgba(150,150,150,0));
@@ -109,7 +111,7 @@
 
 	div.one,#columniser {
 		max-height: 100%;
-		width: 70% !important;
+		width: 16400px !important;
 		/* for the explanation of this value, see Arpia.be or the CSS3-Multi-Column Javascript */
 		/* it is necessary to mention it in Opera's CSS! */
 		overflow: hidden; /* note the difference here with IE */
@@ -117,7 +119,7 @@
 	}
 	div.two {
 		column-count: auto;
-		column-width: 70%;
+		column-width: 330px;
 		column-gap: 80px;
 		max-height: 100%;
 		overflow: hidden; /* note the difference here with IE */
@@ -127,7 +129,7 @@
 		padding-top: 4px;
 	}
 		div.two .columns, div.two .wrapper {
-			width: 70% !important;
+			width: 330px !important;
 			height: 100% !important;
 			/* to make sure we override any settings the Javascript might wish to apply */
 			/* despite our best intentions (such as making the DIVs shorter in height) */
@@ -140,7 +142,7 @@
 
 		#container .nav {
 	position: absolute;
-	height: 100%;
+	height: 100px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -263,3 +265,8 @@
 			-moz-box-shadow: -5px -5px 10px rgba(150, 150, 150, 0.15);
 			
 		}
+svg#paper{
+  background: #fff;
+  width: 800px;
+  height: 600px;
+}
