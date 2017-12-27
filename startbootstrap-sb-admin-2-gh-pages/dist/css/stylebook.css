@@ -77,7 +77,7 @@
 	position: absolute;
 	/*margin: 50 0 0 50;*/
 	top:0;
-	bottom:0;
+	bottom:20px;
 	left: 50%;
 	width: 0; /* nbsp in HTML necessary for Opera to show the DIV; width:0 necessary to remove effect of nbsp */
 	border-left: 1px solid #ccc;
