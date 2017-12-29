@@ -21,6 +21,45 @@
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
 
     <link href="../dist/css/stylebook.css" rel="stylesheet">
+    <style type="text/css" rel="stylesheet">
+        .bgimg {
+            /* Location of the image */
+              background-image: url(../dist/css/test10.jpg);
+              
+              /* Background image is centered vertically and horizontally at all times */
+              background-position: top center;
+              
+              /* Background image doesn't tile */
+              background-repeat: no-repeat;
+              
+              /* Background image is fixed in the viewport so that it doesn't move when 
+                 the content's height is greater than the image's height */
+              /*background-attachment: fixed;*/
+
+              /*height: 500px;*/
+              
+              /* This is what makes the background image rescale based
+                 on the container's size */
+                 max-width:100%;
+                max-height:100%;
+              /*background-size:cover;*/
+              -webkit-background-size: 100%;
+              -webkit-background-image: url(../dist/css/test9.jpg);
+              -moz-background-size: 100%;
+              -o-background-size: 100%;
+              
+/*            -webkit-max-width: 100%;
+            -webkit-max-height: 20%;
+            -moz-max-width: 100%;
+            -moz-max-height: 20%;
+            -o-max-width: 100%;
+            -o-max-height: 20%;*/
+
+              /* Set a background color that will be displayed
+                 while the background image is loading */
+              /*background-color: #464646;*/
+        }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,8 +73,6 @@
 <body>
 
     <div id="wrapper">
-
-
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -49,10 +86,10 @@
                     <div class="panel panel-default">
                          <div class="panel-body">
                             <div class="pageseparator"></div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6">
                                 <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <h2>CSS3 Book</h2>
+                                    <div class="panel-body bgimg">
+                                        <h1 align = "center">CSS3 Book</h1>
                                         <p><em>Two-column, multi-page design emulating the behaviour of a book (without images)</em></p>
                                         <p>This design enables you to place any amount of content in the 'columnified' DIV of the layout, allowing for a site-wide flexible and fully customisable 'book-like' feel.</p>
                                         <p>It uses the CSS3 multi-column module for the multi-column layout (and a Javascript solution for Opera and IE, two browsers that, to date, do not support this module - this solution is a modified version of <a href="http://www.alistapart.com/articles/css3multicolumn/">Cédric Savarese's css3-multi-column.js</a>), and uses a combination of CSS shapes, border-radius, transforms, box-shadows and gradients to create the book appearance. Page turning is achieved via Javascript (pageturn.js). The different stylesheets are fed to browsers via Javascript as well, so as to detect whether the multi-columns are supported or not (stylesheet.js - basic browser detection only, on the assumption that Opera, Firefox, Safari and Chrome users update their browsers regularly).</p>
@@ -60,9 +97,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6">
                                 <div class="panel panel-default">
-                                    <div class="panel-body">
+                                    <div class="panel-body bgimg">
                                         <h2>CSS3 Book</h2>
                                         <p><em>Two-column, multi-page design emulating the behaviour of a book (without images)</em></p>
                                         <p>This design enables you to place any amount of content in the 'columnified' DIV of the layout, allowing for a site-wide flexible and fully customisable 'book-like' feel.</p>
@@ -73,34 +110,7 @@
                             </div>
                          </div>
                     </div>
-                </div>
-                <!-- <div class="layout-book">
-                    <div class="pageseparator"></div>
-                    <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                             <h2>CSS3 Book</h2>
-                                    <p><em>Two-column, multi-page design emulating the behaviour of a book (without images)</em></p>
-                                    <p>This design enables you to place any amount of content in the 'columnified' DIV of the layout, allowing for a site-wide flexible and fully customisable 'book-like' feel.</p>
-                                    <p>It uses the CSS3 multi-column module for the multi-column layout (and a Javascript solution for Opera and IE, two browsers that, to date, do not support this module - this solution is a modified version of <a href="http://www.alistapart.com/articles/css3multicolumn/">Cédric Savarese's css3-multi-column.js</a>), and uses a combination of CSS shapes, border-radius, transforms, box-shadows and gradients to create the book appearance. Page turning is achieved via Javascript (pageturn.js). The different stylesheets are fed to browsers via Javascript as well, so as to detect whether the multi-columns are supported or not (stylesheet.js - basic browser detection only, on the assumption that Opera, Firefox, Safari and Chrome users update their browsers regularly).</p>
-                                    <p>As no images have been used in this template, total customisation of the appearance is easily achieved (moreover, the CSS is annotated).</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                             <h2>CSS3 Book</h2>
-                                    <p><em>Two-column, multi-page design emulating the behaviour of a book (without images)</em></p>
-                                    <p>This design enables you to place any amount of content in the 'columnified' DIV of the layout, allowing for a site-wide flexible and fully customisable 'book-like' feel.</p>
-                                    <p>It uses the CSS3 multi-column module for the multi-column layout (and a Javascript solution for Opera and IE, two browsers that, to date, do not support this module - this solution is a modified version of <a href="http://www.alistapart.com/articles/css3multicolumn/">Cédric Savarese's css3-multi-column.js</a>), and uses a combination of CSS shapes, border-radius, transforms, box-shadows and gradients to create the book appearance. Page turning is achieved via Javascript (pageturn.js). The different stylesheets are fed to browsers via Javascript as well, so as to detect whether the multi-columns are supported or not (stylesheet.js - basic browser detection only, on the assumption that Opera, Firefox, Safari and Chrome users update their browsers regularly).</p>
-                                    <p>As no images have been used in this template, total customisation of the appearance is easily achieved (moreover, the CSS is annotated).</p>
-                        </div>
-                    </div>
-                    </div>
-                    
-            </div> -->
-            
+                </div>            
         </div>
         <!-- /#page-wrapper -->
 

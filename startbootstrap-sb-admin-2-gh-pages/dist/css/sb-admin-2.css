@@ -12,7 +12,7 @@ body {
 #page-wrapper {
   padding: 0 15px;
   min-height: 700px;
-  background: -webkit-radial-gradient(center, ellipse cover, #feffff 81%,#ddf1f9 95%,#a0d8ef 100%);
+
 }
 @media (min-width: 768px) {
   #page-wrapper {
