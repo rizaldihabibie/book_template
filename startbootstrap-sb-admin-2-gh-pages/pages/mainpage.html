@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Book Layout</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <link href="../dist/css/stylebook.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+
+    <style type="text/css" rel="stylesheet">
+        .bgimg3 {
+            /* Location of the image */
+              background-image: url(../dist/css/motif.jpg);
+              
+              /* Background image is centered vertically and horizontally at all times */
+              background-position: top center;
+              
+              /* Background image doesn't tile */
+              background-repeat: no-repeat;
+              
+              /* Background image is fixed in the viewport so that it doesn't move when 
+                 the content's height is greater than the image's height */
+              /*background-attachment: fixed;*/
+
+              /*height: 500px;*/
+              
+              /* This is what makes the background image rescale based
+                 on the container's size */
+                 max-width:100%;
+                max-height:100%;
+              /*background-size:cover;*/
+              -webkit-background-size: 100%;
+              -moz-background-size: 100%;
+              -o-background-size: 100%;
+              
+/*            -webkit-max-width: 100%;
+            -webkit-max-height: 20%;
+            -moz-max-width: 100%;
+            -moz-max-height: 20%;
+            -o-max-width: 100%;
+            -o-max-height: 20%;*/
+
+              /* Set a background color that will be displayed
+                 while the background image is loading */
+              /*background-color: #464646;*/
+        }
+
+        .bgimg {
+            /* Location of the image */
+              background-image: url(../dist/css/frontpage.png);
+              
+              /* Background image is centered vertically and horizontally at all times */
+              background-position: top center;
+              
+              /* Background image doesn't tile */
+              background-repeat: no-repeat;
+              
+              /* Background image is fixed in the viewport so that it doesn't move when 
+                 the content's height is greater than the image's height */
+              /*background-attachment: fixed;*/
+
+              /*height: 500px;*/
+              
+              /* This is what makes the background image rescale based
+                 on the container's size */
+                 max-width:100%;
+                max-height:100%;
+              /*background-size:cover;*/
+              -webkit-background-size: 100%;
+              -moz-background-size: 100%;
+              -o-background-size: 100%;
+              
+/*            -webkit-max-width: 100%;
+            -webkit-max-height: 20%;
+            -moz-max-width: 100%;
+            -moz-max-height: 20%;
+            -o-max-width: 100%;
+            -o-max-height: 20%;*/
+
+              /* Set a background color that will be displayed
+                 while the background image is loading */
+              /*background-color: #464646;*/
+        }
+
+        .booksize {
+
+              height: 500px;
+              
+              /*background-size:cover;*/
+/*              -webkit-background-size: 100%;
+              -moz-background-size: 100%;
+              -o-background-size: 100%;*/
+              
+/*            -webkit-max-width: 100%;
+            -webkit-max-height: 20%;
+            -moz-max-width: 100%;
+            -moz-max-height: 20%;
+            -o-max-width: 100%;
+            -o-max-height: 20%;*/
+
+              /* Set a background color that will be displayed
+                 while the background image is loading */
+              /*background-color: #464646;*/
+        }
+        .wedding-announcement {
+          width: 60%;
+          height: 100%;
+          position: absolute;
+          left: 20%;
+          top: 30%;
+          z-index: 101;
+          text-align: center;
+          display: table;
+      }
+      .wedding-announcement .couple-name-merried-text {
+          display: table-cell;
+          vertical-align: middle;
+      }
+      .married-text h4 {
+        font-family: 'Lora';
+        font-size: 13px !important;
+        color: #000;
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+        padding: 12px 20px;
+        position: relative;
+        z-index: 10;
+        letter-spacing: 2px;
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="page-wrapper" class =" bgimg3">
+            <div class="row">
+                <div class="col-md-12 bgimg2">
+                    <h1 class="page-header" align="center" style="font-family: 'Lobster', cursive;color: white"></h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);">
+                         <div class="panel-body booksize bgimg">
+                              <!-- <h1 align="center">INVITATION</h1> -->
+                              <div class="wedding-announcement">
+                                <div class="couple-name-merried-text">
+                                  <h1>HIM AND HER</h1>
+                                  <div class="married-text">
+                                    <h4>hohohoho</h4>
+                                  </div>
+                                </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>            
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+     <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
