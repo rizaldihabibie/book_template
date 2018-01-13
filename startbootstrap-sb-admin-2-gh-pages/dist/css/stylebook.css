@@ -38,12 +38,12 @@
 
 @media only screen and (max-width: 768px){
 	.pageseparator {
-		position: left;
+		position: absolute;
 		/*margin: 50 0 0 50;*/
 		top:50%;
 		/*bottom:20px;*/
-		left:  0;
-		width: 100%;
+		left:  15px;
+		width: 90%;
 		height: 0; /* nbsp in HTML necessary for Opera to show the DIV; width:0 necessary to remove effect of nbsp */
 		border-top: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
